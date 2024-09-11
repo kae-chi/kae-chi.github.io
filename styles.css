@@ -1,0 +1,173 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+/* Import Font Awesome for Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* General Styles */
+body {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Soft powder blue */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Reduced margin to make the header more compact */
+    font-size: 2.5em; /* Smaller font size */
+    color: #d1eaf7; /* Base cool gray */
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Add an overlay gradient for the name */
+h1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(to bottom, rgba(39, 38, 38, 0.1), rgba(0, 0, 0, 0.2));
+    background-color: #607d8b; /* Medium cool gray for the nav bar */
+    padding: 10px 0; /* Reduced padding to make the bar smaller */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Reduced margin between the navigation items */
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; /* Slightly smaller font size */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Font Awesome Icons in Navigation */
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+}
+.subtitle {
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes any extra padding */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: normal;
+}
+
+/* Section Styling */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff; /* White background for the section */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #546e7a; /* Slightly darker cool gray for the text */
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Optional Cool Graphic Art */
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: url('cool_graphic_art.png') no-repeat center top;
+    background-size: cover;
+    opacity: 0.2; /* Light opacity to create a subtle graphic effect */
+    z-index: -1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #455a64; /* Darker cool gray for the footer */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+td{
+    padding: 15px;
+    vertical-align: middle;
+
+}
+.text-column {
+    vertical-align: top;
+
+  
+}
+
+.title {
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes any extra padding */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Aligns content to the left and subtext to the right */
+    align-items: flex-start;
+}
+
+.main-content {
+    max-width: 70%; /* Ensures the main content takes up a majority of the space */
+    background-color: #ffffff; /* Apply background color to just the main content */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.subtext {
+    font-size: 16px;
+    color: #555;
+    align-self: flex-start; /* Aligns subtext to the top-right corner */
+    text-align: right; /* Ensures right alignment of the text */
+}
