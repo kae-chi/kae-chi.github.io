@@ -171,3 +171,9 @@ td{
     align-self: flex-start; /* Aligns subtext to the top-right corner */
     text-align: right; /* Ensures right alignment of the text */
 }
+
+
+h3{ 
+    font-size: 20px; 
+    color:rgba(180, 180, 180, 0.886)
+}
