@@ -1,0 +1,21 @@
+/* styles.css */
+
+/* Apply to the body to make it occupy full height and center content */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;       /* Full viewport height */
+    margin: 0;
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 60%; /* Adjust width as needed */
+    max-width: 600px;
+    margin: 0 auto; /* Center horizontally within the container */
+
+}
+
+
