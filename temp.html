@@ -1,41 +1,77 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<html> 
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Temp</title>
-        <link rel="stylesheet" href="ph490_main.css">
-    </head>
-    <body> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Clicks</title>
+    <link rel="stylesheet" href="ph490_main.css">
+    <script>
+        // Object to track clicked sections
+        const clickedSections = {
+            canary: false,
+            fishtank: false,
+            heart: false
+        };
 
-        <table> 
-            <tr> 
+        // Function to track clicks
+        function trackClick(section, url) {
+            clickedSections[section] = true;
+            checkReveal();
+            // Open link in a new tab
+            window.open(url, '_blank');
+        }
 
-                <!-- Relevant Images  -->
-                <td> 
-                    <a href = "canary.html"> <img src = "../ph490_proj/canary.webp" width=200px height=200px></img>
-                    </a>
-                  
-                </td>
-                <td>
-                  <a href = "fishtank.html"> <img src = "../ph490_proj/fishtank.avif" width="200px" height="200px"></img> </a>  
-                </td>
+        // Function to check if all sections are clicked
+        function checkReveal() {
+            if (clickedSections.canary && clickedSections.fishtank && clickedSections.heart) {
+                const fourthSection = document.getElementById('fourthSection');
+                if (fourthSection) {
+                    fourthSection.style.display = 'block';
+                }
+            }
+        }
 
+        // Ensure script runs after DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded and parsed');
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- Relevant Images -->
+            <td>
+                <a href="#" onclick="trackClick('canary', 'canary.html')"> 
+                    <img src="canary.webp" width="200px" height="200px" alt="Canary">
+                </a>
+            </td>
+            <td>
+                <a href="#" onclick="trackClick('fishtank', 'fishtank.html')"> 
+                    <img src="fishtank.avif" width="200px" height="200px" alt="Fish Tank">
+                </a>
+            </td>
+            <td>
+                <a href="#" onclick="trackClick('heart', 'agitation.html')"> 
+                    <img src="heart.webp" width="200px" height="200px" alt="Heart">
+                </a>
+            </td>
+            <td> 
+                <div id="fourthSection" style="display: none; margin-top: 20px;">
+                    <a href="final.html" target="_blank"><img src="final.png" width="200px" height="200px"></img></a>
+            
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <!-- Relevant Captions -->
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
-            </tr>
-            <tr> 
-                <!-- Relevant Captions -->
-                <td> 
-                    caption 1
-                </td>
-                <td> 
-                    caption 2
-                </td>
-                
-            </tr>
-        
+    <!-- Hidden Fourth Section -->
 
-        </table>
-   </body>
+</body>
 </html>

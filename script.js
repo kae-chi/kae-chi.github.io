@@ -70,13 +70,12 @@ function handleImageClick(event) {
         // End the sequence
         const finalMessage = document.createElement('a');
         finalMessage.textContent = "LEAVE.";
-        finalMessage.href = "../temp.html"; // Link to your other HTML file
+        finalMessage.href = "#"; // Prevent navigation
         finalMessage.style.fontWeight = 'bold';
         finalMessage.style.color = 'black';
         finalMessage.style.fontSize = '24px'; // Make it larger
         finalMessage.style.textDecoration = 'none'; // Optional: Remove underline
         finalMessage.style.position = 'absolute';
-    
         finalMessage.style.transform = 'translate(-50%, -50%)'; // Center anchor point
 
         // Randomly position the final message
@@ -84,10 +83,17 @@ function handleImageClick(event) {
         finalMessage.style.left = `${x}px`;
         finalMessage.style.top = `${y}px`;
 
-      
+        // Add an event listener to close the tab
+        finalMessage.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            window.open('', '_self'); // Set the current window
+            window.close(); // Attempt to close the tab
+        });
+
         contentContainer.appendChild(finalMessage);
     }
 }
+
 
 
 

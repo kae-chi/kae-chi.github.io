@@ -11,11 +11,11 @@ body {
 
 /* Style for the table */
 table {
-    border-collapse: collapse;
+    border-collapse: separate; /* Allow space between columns */
+    border-spacing: 10px; /* Adjust spacing as needed */
     width: 60%; /* Adjust width as needed */
     max-width: 600px;
     margin: 0 auto; /* Center horizontally within the container */
-
 }
 
 

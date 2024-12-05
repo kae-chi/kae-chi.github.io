@@ -1,35 +1,39 @@
 <!DOCTYPE html> 
 <html lang="en">
-<html> 
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fishtank</title>
         <link rel="stylesheet" href="fishtank.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const leavingLink = document.querySelector('.text-overlay a');
+
+                leavingLink.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default link behavior
+                    window.open('', '_self'); // Set current window
+                    window.close(); // Attempt to close the tab
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="video-container">
-          <video autoplay muted loop class="background-video">
-            <source src="../fishtank.mp4">
-          </video>
-          <div class="text-overlay">
-
-            <p>We sit facing each other, I raise my line of sight to glare at you. 
-                .</p>
-            <p> My knees bent at a 24 degree angle, with my back pressed against the thick layer of glass. You sit similarly, our legs woven together in such a grotesque fashion. </p>
-            <p>The ridge of your nose, and the shape of your face are blurry. After all, I haven’t seen you in 3 years now. And for 3 years now, under the bluelight, everyone is ugly in your way. 
-            </p>
-            <p> 
-                Under the water exists a memory of us which was never conceived. Through the glass was not a school of fish, just you and me. 
-                
+            <video autoplay muted loop class="background-video">
+                <source src="../fishtank.mp4">
+            </video>
+            <div class="text-overlay">
+                <p>We sit facing each other, I raise my line of sight to glare at you.</p>
+                <p>My knees bent at a 24 degree angle, with my back pressed against the thick layer of glass. You sit similarly, our legs woven together in such a grotesque fashion.</p>
+                <p>The ridge of your nose, and the shape of your face are blurry. After all, I haven’t seen you in 3 years now. And for 3 years now, under the bluelight, everyone is ugly in your way.</p>
+                <p>Under the water exists a memory of us which was never conceived. Through the glass was not a school of fish, just you and me.</p>
+                <p>When I move, my head would hit the lid. You’d notice, then ask me to stay a little longer –– did that also include in my consciousness and everywhere in between?</p>
+                <p>We sit across from each other inside a fish tank.</p>
+                <p>I’m forced to see your shape, your fragile shape was projected, blurring my future and memories. You spoil me with your hungry, humiliating gaze scavenging everything– body, chest, legs, and face.</p>
+                <p>
+                    <a href="temp.html">Leaving</a> only my grieving, glazed eyes.
                 </p>
-            <p> When I move, my head would hit the lid. You’d notice, then ask me to stay a little longer –– did that also include in my consciousness and everywhere in between? </p>\
-            <p> We sit across from each other inside a fish tank. </p>
-            <p>  I’m forced to see your shape, your fragile shape was projected, blurring my future and memories. You spoil me with your hungry, humiliating gaze scavenging everything–  body, chest, legs, and face. </p>
-            <p> 
-               <a href="temp.html">Leaving</a>  only my grieving, glazed eyes. 
-</p>               
+            </div>
         </div>
-        </div>
-      </body>
+    </body>
 </html>

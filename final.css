@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+}
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 10px; /* Start near the top */
+    left: 10px; /* Start near the left edge */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  
+ 
+  .text-overlay p {
+    color: white; 
+    font-size: 20pt;
+    margin: 10px 0 0;
+  }
+
+
+
+
+  a {
+    color: white; /* Set the default link color */
+    text-decoration: none; /* Optional: remove underline */
+  }
+
+  a:visited {
+    color: white; /* Force visited links to use the same color */
+  }
+
+  a:hover {
+    color: white; /* Optional: hover color */
+  }
+
+
+  a {
+    color: white;/* Set the default link color */
+    text-decoration: none; /* Optional: remove underline */
+  }
+
+  a:visited {
+    color: white; /* Force visited links to use the same color */
+  }
+
+  a:hover {
+    color: white; /* Optional: hover color */
+  }
+
+  a:active{
+    color: white;
+  }

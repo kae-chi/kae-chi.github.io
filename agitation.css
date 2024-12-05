@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Scrolling Content Styles */
+.scrolling-content {
+    height: 2500px; /* Very tall height for scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Shape Container Styles */
+.shape-container {
+    position: absolute;
+    top: 200px; /* Adjust vertical position */
+}
+
+.alt_shape{
+    height: 1000px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Shape Styles */
+.shape {
+    white-space: pre; /* Preserve whitespace formatting */
+    font-size: 10px; /* Adjust font size */
+    line-height: 1.2; /* Adjust line spacing */
+}
+
+/* General Link Styles */
+a {
+    color: #fff; /* White text to match the page */
+    text-decoration: none; /* Remove underline */
+    font-family: monospace; /* Match the font of the page */
+    font-size: 12px; /* Match the font size of the page */
+} 
+
+/* Hover Effects */
+a:hover {
+    background-color: #555; /* Slightly lighter background */
+    color: #ffcc00; /* Highlight text with a gold color */
+}
