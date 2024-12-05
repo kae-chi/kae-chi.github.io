@@ -43,7 +43,7 @@ body, html {
 
 
   a {
-    color: white; /* Set the default link color */
+    color: rgb(255, 196, 196); /* Set the default link color */
     text-decoration: none; /* Optional: remove underline */
   }
 
