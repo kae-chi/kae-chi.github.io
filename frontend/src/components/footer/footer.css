@@ -1,0 +1,12 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 12px;
+}
+
+.socials svg {
+  height: 20px;
+  width: 20px;
+}
