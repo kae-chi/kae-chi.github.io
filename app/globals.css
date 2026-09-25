@@ -326,6 +326,18 @@ figcaption span {
   line-height: 0.91;
 }
 
+.education-school span {
+  display: block;
+  margin-top: 0.7rem;
+  color: var(--soft-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .education-degrees {
   border-top: 1px solid var(--line);
 }
@@ -357,10 +369,6 @@ figcaption span {
 .education-role:hover h2 {
   color: var(--copper);
   transform: translateX(0.35rem);
-}
-
-.education-role time {
-  color: var(--soft-ink);
 }
 
 .experience {
@@ -828,10 +836,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.6rem;
-  }
-
-  .education-role time {
-    margin-top: 0.6rem;
   }
 
   .roles {

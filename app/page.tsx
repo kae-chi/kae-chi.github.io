@@ -155,15 +155,16 @@ export default function Home() {
         </div>
 
         <div className="education-roles">
-          <h3 className="education-school">Boston University</h3>
+          <h3 className="education-school">
+            Boston University
+            <span>Graduating December 2026</span>
+          </h3>
           <div className="education-degrees">
             <article className="education-role">
               <h2>BA in Computer Science</h2>
-              <time>2022 — 2026</time>
             </article>
             <article className="education-role">
               <h2>BA in Philosophy</h2>
-              <time>2022 — 2026</time>
             </article>
           </div>
         </div>
