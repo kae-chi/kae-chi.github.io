@@ -491,6 +491,12 @@ time {
   line-height: 0.91;
 }
 
+.role-4 h2 {
+  flex-basis: 22rem;
+  max-width: 22rem;
+  font-size: clamp(1.6rem, 2.45vw, 3rem);
+}
+
 .role h3,
 .role p {
   position: relative;
