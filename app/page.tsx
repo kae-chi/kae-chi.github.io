@@ -33,20 +33,20 @@ const experience = [
 
 const projects = [
   {
-    name: "charge_box",
-    description: "Arduino script for E-match ignitor box",
+    name: "E-Match Ignition Controller",
+    description: "Arduino-based controller for an E-match ignitor box",
     language: "C++",
     href: "https://github.com/kae-chi/charge_box",
   },
   {
-    name: "Fake_MOTE",
-    description: "Hardware simulator and testing framework for BURPG Web GUI",
+    name: "BURPG Hardware Simulator",
+    description: "Hardware simulator and test framework for the BURPG Web GUI",
     language: "Python",
     href: "https://github.com/kae-chi/Fake_MOTE",
   },
   {
-    name: "Hybrid-Intro-Project",
-    description: "Arduino script written to fire a Paraffin/GOX engine",
+    name: "Hybrid Engine Ignition Controller",
+    description: "Arduino controller for a paraffin/GOX hybrid engine",
     language: "C++",
     href: "https://github.com/kae-chi/Hybrid-Intro-Project",
   },
@@ -133,7 +133,7 @@ export default function Home() {
             </p>
             <p>
               I have experience with large-scale security systems,
-              data-intensive software, observability tools, cloud
+              data-driven applications, observability tools, cloud
               infrastructure, and aerospace projects.
             </p>
             <p>
@@ -194,9 +194,6 @@ export default function Home() {
           <h2>Projects</h2>
           <span className="index">✦</span>
         </div>
-        <p className="projects-note">
-          A few things I&apos;ve built and explored.
-        </p>
         <div className="projects-grid">
           {projects.map((project) => (
             <a

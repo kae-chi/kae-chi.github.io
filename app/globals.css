@@ -558,14 +558,6 @@ time {
   color: var(--copper);
 }
 
-.projects-note {
-  max-width: 25rem;
-  margin: 0 0 3rem auto;
-  color: rgba(244, 240, 232, 0.8);
-  font-size: clamp(1rem, 1.35vw, 1.3rem);
-  line-height: 1.45;
-}
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
