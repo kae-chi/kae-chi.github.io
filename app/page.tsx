@@ -105,7 +105,7 @@ export default function Home() {
 
         <figure className="portrait">
           <Image
-            src="/images/Screenshot 2026-09-23 at 10.11.25 PM.png"
+            src="/images/kae-hero-cropped.png"
             alt=""
             fill
             priority
