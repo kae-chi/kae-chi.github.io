@@ -93,7 +93,6 @@ main {
   left: 0;
   color: var(--copper);
   font-size: clamp(1.35rem, 2.1vw, 2rem);
-  animation: glint 5s ease-in-out infinite;
 }
 
 h1,
@@ -601,8 +600,10 @@ time {
 }
 
 .project-card-top > span {
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--copper);
   font-size: 1.4rem;
+  font-variant-emoji: text;
 }
 
 .project-card p {
@@ -805,7 +806,7 @@ footer {
   }
 
   .star {
-    top: 3rem;
+    display: none;
   }
 
   .orbit-one {

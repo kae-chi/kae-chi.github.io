@@ -205,7 +205,7 @@ export default function Home() {
             >
               <div className="project-card-top">
                 <h3>{project.name}</h3>
-                <span aria-hidden="true">↗</span>
+                <span className="project-arrow" aria-hidden="true">↗︎</span>
               </div>
               <p>{project.description}</p>
               <span className={`project-language ${project.language === "Python" ? "python" : "cpp"}`}>

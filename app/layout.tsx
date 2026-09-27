@@ -4,6 +4,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Katelyn (Kae) Chi",
+  other: {
+    "format-detection": "telephone=no,date=no,email=no,address=no",
+  },
 };
 
 export const viewport: Viewport = {
